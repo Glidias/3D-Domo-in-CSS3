@@ -1,5 +1,5 @@
-His name is DOMO. I've made this experiment during my last research about using 3D & CSS3 in web browsers. It works on Google Chrome (v.16 & up), Firefox (v.10 & up) & Safari (including mobile version for iOS).
-===
-Note: Move your mouse (or tap anywhere if you're using iOS) to change perspective angle. If you want to create army of little Domos - do so but remember about me.
+My fork which includes animated Danbos in webkit, and Flash-based application program to help convert Alternativa3D version7 scenes (consisting solely of quad plane-based meshes) into a bunch of HTML DOM elements to be injected into a document with CSS webkit 3d perspective.
 
-Online version: http://demos.paranoida.com/domo/
+I figured that since Alternativa3D version 7 already supports loading of .DAE/3DS geometry and maintaining quad-faces, using other editors to build stuff might be much easier. Plus, there are some stuff created in Alternativa3D code (eg. the Danbots) which is quite easy to port over to HTML/CSS.
+
+Target platforms are mainly for mobile, since CSS webkit 3d transforms are hardware accelerated.

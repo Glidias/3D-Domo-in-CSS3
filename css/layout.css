@@ -193,22 +193,52 @@ body {
   margin: -13em auto 0;
   font-size: 8px;
   -webkit-transform-style: preserve-3d;
-  -webkit-transform-origin: right bottom;
+  -webkit-transform-origin: center center;
   /*-webkit-animation: walk 1s infinite linear;*/
   -moz-transform-style: preserve-3d;
-  -moz-transform-origin: right bottom;
+  -moz-transform-origin: center center;
   transform-style: preserve-3d;
-  transform-origin: right bottom;
+  transform-origin: center center;
+
+}
+
+.domo .danboviewer {
+  -webkit-transform:translateX(80px) translateY(181px);
+}
+.domo .danbox {
+  -webkit-transform:translateX(80px) translateY(51px);
 }
 .domo .body {
   width: 18em;
   height: 21em;
   -moz-transform-style: preserve-3d;
 }
+.domo .plane {
+	-webkit-transform-origin:left top;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility:visible;
+	position: absolute;
+}
+.Mesh>* {
+	-webkit-transform-origin:left top;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility:hidden;
+	position: absolute;
+}
+.Object3D {
+	-webkit-transform-origin:right bottom;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility:hidden;
+	position: absolute;
+}
 .domo .body .front, .domo .body .back {
   position: absolute;
   top: 0;
   left: 0;
+    z-index: 1;
+
+   /* reinforce z-index in 3D space */
+    -webkit-transform: translate3d(0, 0, 1px);
   width: inherit;
   height: inherit;
 }
@@ -302,6 +332,8 @@ body {
   width: inherit;
   height: inherit;
 }
+
+
 .domo .leg .front {
   background: url(../images/domo_pattern_front.jpg) repeat 0 0 #79391a;
 }
