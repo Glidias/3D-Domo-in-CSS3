@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Agrrr! Here is a mighty 3D domo in CSS3</title>
+    <meta name="description" content="CSS3 experiment with webkit-perspective &amp; 3D transform">
+    <meta name="author" content="Rafal Bromirski">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/anims.css">
+	<link rel="stylesheet" href="css/danbo_anims.css">
+		
+		
+    <script src="js/libs/jquery-1.7.1.min.js"></script>
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<a href="http://github.com/paranoida/3D-Domo-in-CSS3"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+
+<div class="content">
+    <div class="controls">
+        <input type="range" min="-360" max="360" value="-10" name="x_axis"/>
+        <input type="range" min="-360" max="360" value="-35" name="y_axis"/>
+        <input type="range" min="-360" max="360" value="0" name="z_axis"/>
+    </div>
+    <div class="domo_thumb"><img src="images/domo_thumb.jpg" alt="Domo" /></div>
+    <div class="viewport">
+        <div class="perspective">
+        <div class="domo">
+
+	<div class="danboviewer Object3D">
+			
+ <div class="root Object3DContainer Object3D">
+  <div class="danbot dash Object3DContainer Object3D" style="-webkit-transform:matrix3d(-1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,1);" id="testDanbo">
+    <div class="danBody Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+      <div class="danHead Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,-188,1);">
+        <div class="boxHead Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,-51,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,3.1875,0,0,0,0,-3.1875,0,-1,0,0,0,80,-51,51,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,3.1875,0,0,0,0,3.1875,0,1,0,0,0,-80,-51,-51,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_face.png); background-position:0px 0px; width:50px; height:32px; -webkit-transform:matrix3d(-3.200000047683716,0,0,0,0,0,3.1875,0,0,1,0,0,80,-51,-51,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-5,0,0,0,0,0,-3.1875,0,0,-1,0,0,80,51,51,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_headtop.png); background-position:-50px 0px; width:50px; height:32px; -webkit-transform:matrix3d(-3.200000047683716,0,0,0,0,-3.1875,0,0,0,0,1,0,80,51,-51,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(5,0,0,0,0,-3.1875,0,0,0,0,-1,0,-80,51,51,1);"></div>
+        </div>
+      </div>
+      <div class="danSldL Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-48,0,-178,1);">
+        <div class="danArmL Object3DContainer Object3D" style="-webkit-transform:matrix3d(0.2674,0,-0.9635,0,0,1,0,0,0.9635,0,0.2674,0,0,0,0,1);">
+          <div class="boxArmL Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-63,0,0,1);">
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.8125,0,0,0,0,-0.8125,0,-1,0,0,0,53,-13,13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.8125,0,0,0,0,0.8125,0,1,0,0,0,-53,-13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,0,0.8125,0,0,1,0,0,53,-13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,0,-0.8125,0,0,-1,0,0,53,13,13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_top.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,-0.8125,0,0,0,0,1,0,53,13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(3.3125,0,0,0,0,-0.8125,0,0,0,0,-1,0,-53,13,13,1);"></div>
+          </div>
+        </div>
+        <div class="boxSldL Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,-0.625,0,-1,0,0,0,10,-10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,0.625,0,1,0,0,0,-10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,0.625,0,0,1,0,0,10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,-0.625,0,0,-1,0,0,10,10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,-0.625,0,0,0,0,1,0,10,10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.625,0,0,0,0,-0.625,0,0,0,0,-1,0,-10,10,10,1);"></div>
+        </div>
+      </div>
+      <div class="danSldR Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,48,0,-178,1);">
+        <div class="danArmR Object3DContainer Object3D" style="-webkit-transform:matrix3d(0.2674,0,0.9635,0,0,1,0,0,-0.9635,0,0.2674,0,0,0,0,1);">
+          <div class="boxArmR Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,63,0,0,1);">
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.8125,0,0,0,0,-0.8125,0,-1,0,0,0,53,-13,13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.8125,0,0,0,0,0.8125,0,1,0,0,0,-53,-13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,0,0.8125,0,0,1,0,0,53,-13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,0,-0.8125,0,0,-1,0,0,53,13,13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_top.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-3.3125,0,0,0,0,-0.8125,0,0,0,0,1,0,53,13,-13,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(3.3125,0,0,0,0,-0.8125,0,0,0,0,-1,0,-53,13,13,1);"></div>
+          </div>
+        </div>
+        <div class="boxSldR Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,-0.625,0,-1,0,0,0,10,-10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,0.625,0,1,0,0,0,-10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,0.625,0,0,1,0,0,10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,-0.625,0,0,-1,0,0,10,10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,-0.625,0,0,0,0,1,0,10,10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.625,0,0,0,0,-0.625,0,0,0,0,-1,0,-10,10,10,1);"></div>
+        </div>
+      </div>
+      <div class="danKneL Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-17,0,-76,1);">
+        <div class="danLegL Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="boxLegL Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,38,1);">
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.75,0,0,0,0,-2.0625,0,-1,0,0,0,15,-28,33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.75,0,0,0,0,2.0625,0,1,0,0,0,-15,-28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,0,2.0625,0,0,1,0,0,15,-28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,0,-2.0625,0,0,-1,0,0,15,28,33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,-1.75,0,0,0,0,1,0,15,28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.9375,0,0,0,0,-1.75,0,0,0,0,-1,0,-15,28,33,1);"></div>
+          </div>
+        </div>
+        <div class="boxKneL Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,-0.625,0,-1,0,0,0,10,-10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,0.625,0,1,0,0,0,-10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,0.625,0,0,1,0,0,10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,-0.625,0,0,-1,0,0,10,10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,-0.625,0,0,0,0,1,0,10,10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.625,0,0,0,0,-0.625,0,0,0,0,-1,0,-10,10,10,1);"></div>
+        </div>
+      </div>
+      <div class="danKneR Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,17,0,-76,1);">
+        <div class="danLegR Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="boxLegR Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,38,1);">
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.75,0,0,0,0,-2.0625,0,-1,0,0,0,15,-28,33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.75,0,0,0,0,2.0625,0,1,0,0,0,-15,-28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,0,2.0625,0,0,1,0,0,15,-28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,0,-2.0625,0,0,-1,0,0,15,28,33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.9375,0,0,0,0,-1.75,0,0,0,0,1,0,15,28,-33,1);"></div>
+            <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.9375,0,0,0,0,-1.75,0,0,0,0,-1,0,-15,28,33,1);"></div>
+          </div>
+        </div>
+        <div class="boxKneR Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,-0.625,0,-1,0,0,0,10,-10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,0.625,0,0,0,0,0.625,0,1,0,0,0,-10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,0.625,0,0,1,0,0,10,-10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,0,-0.625,0,0,-1,0,0,10,10,10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-0.625,0,0,0,0,-0.625,0,0,0,0,1,0,10,10,-10,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(0.625,0,0,0,0,-0.625,0,0,0,0,-1,0,-10,10,10,1);"></div>
+        </div>
+      </div>
+      <div class="danSktL Object3DContainer Object3D" style="-webkit-transform:matrix3d(0.8775,0,0.4794,0,0,1,0,0,-0.4794,0,0.8775,0,-38,0,-86,1);">
+        <div class="planeSktL Mesh Object3D" style="-webkit-transform:matrix3d(0,-1,0,0,0,0,1,0,-1,0,0,0,0,0,15,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(1.875,0,0,0,0,-0.9375,0,0,0,0,-1,0,-30,15,0,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-1.875,0,0,0,0,-0.9375,0,0,0,0,1,0,30,15,0,1);"></div>
+        </div>
+      </div>
+      <div class="danSktR Object3DContainer Object3D" style="-webkit-transform:matrix3d(0.8775,0,-0.4794,0,0,1,0,0,0.4794,0,0.8775,0,38,0,-86,1);">
+        <div class="planeSktR Mesh Object3D" style="-webkit-transform:matrix3d(0,1,0,0,0,0,1,0,1,0,0,0,0,0,15,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(1.875,0,0,0,0,-0.9375,0,0,0,0,-1,0,-30,15,0,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-1.875,0,0,0,0,-0.9375,0,0,0,0,1,0,30,15,0,1);"></div>
+        </div>
+      </div>
+      <div class="danSktF Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,0.8775,0.4794,0,0,-0.4794,0.8775,0,0,-30,-86,1);">
+        <div class="planeSktF Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,0,1,0,0,-1,0,0,0,0,15,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(2.375,0,0,0,0,-0.9375,0,0,0,0,-1,0,-38,15,0,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_front.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-2.375,0,0,0,0,-0.9375,0,0,0,0,1,0,38,15,0,1);"></div>
+        </div>
+      </div>
+      <div class="danSktB Object3DContainer Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,0.8775,-0.4794,0,0,0.4794,0.8775,0,0,30,-86,1);">
+        <div class="planeSktB Mesh Object3D" style="-webkit-transform:matrix3d(-1,0,0,0,0,0,1,0,0,1,0,0,0,0,15,1);">
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(2.375,0,0,0,0,-0.9375,0,0,0,0,-1,0,-38,15,0,1);"></div>
+          <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-2.375,0,0,0,0,-0.9375,0,0,0,0,1,0,38,15,0,1);"></div>
+        </div>
+      </div>
+      <div class="boxBody Mesh Object3D" style="-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,-137,1);">
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_right.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.875,0,0,0,0,-3.1875,0,-1,0,0,0,38,-30,51,1);"></div>
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_left.png); background-position:0px 0px; width:32px; height:32px; -webkit-transform:matrix3d(0,1.875,0,0,0,0,3.1875,0,1,0,0,0,-38,-30,-51,1);"></div>
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bodyfront.png); background-position:0px 0px; width:32px; height:43px; -webkit-transform:matrix3d(-2.375,0,0,0,0,0,2.3720929622650146,0,0,1,0,0,38,-30,-51,1);"></div>
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_back.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-2.375,0,0,0,0,0,-3.1875,0,0,-1,0,0,38,30,51,1);"></div>
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px 0px; width:32px; height:32px; -webkit-transform:matrix3d(-2.375,0,0,0,0,-1.875,0,0,0,0,1,0,38,30,-51,1);"></div>
+        <div class="plane" style="background-image:url(danbo_textures/danbo_tx_bottom.png); background-position:-32px -32px; width:32px; height:32px; -webkit-transform:matrix3d(2.375,0,0,0,0,-1.875,0,0,0,0,-1,0,-38,30,51,1);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+	</div>
+			
+		</div>
+		</div>
+    </div>
+    <div class="description">
+        <div class="error">Sorry but your browser doesn't support CSS3 transform 3D :(</div>
+        <h1>Agrrrr!!!</h1>
+     
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
