@@ -1,3 +1,7 @@
+NOTE: This Repository is no longer updated anymore.
+
+--------------------------
+
 My fork which includes animated Danbos in webkit, and Flash-based application program to help convert Alternativa3D version7 scenes (consisting solely of quad plane-based meshes) into a bunch of HTML DOM elements to be injected into a document with CSS webkit 3d perspective.
 
 I figured that since Alternativa3D version 7 already supports loading of .DAE/3DS geometry and maintaining quad-faces, using other editors to build stuff might be much easier. Plus, there are some stuff created in Alternativa3D code (eg. the Danbots) which is quite easy to port over to HTML/CSS.
