@@ -231,6 +231,15 @@ package wonderfl.utils
 				
 				var a3dMatrix:Matrix3D = createMatrixA3D(vec, vec3, vec2, posVertex);
 				var cssMatrix:Matrix3D =  new Matrix3D(convertNestedObjMatrix(a3dMatrix));
+				
+
+			
+			var data:Vector.<Number> = cssMatrix.rawData;
+			data[8] = -data[8];
+			data[9] = -data[9];
+			data[10] = -data[10];
+			cssMatrix.rawData = data;
+			
 				//mesh._parent == targetRootSpace ?  new Matrix3D(convertPlaneMatrix(a3dMatrix)) : new Matrix3D(convertNestedObjMatrix(a3dMatrix));
 				
 				if (f.material is TextureMaterial) {
@@ -260,7 +269,7 @@ package wonderfl.utils
 				cssMatrix.prependScale(planeWidth/matWidth, 1, 1);
 				cssMatrix.prependScale(1, planeHeight / matHeight, 1);
 				
-			
+				
 				
 			
 				var lineThickness:Number = f.material is FillMaterial ? (f.material as FillMaterial).lineThickness : 0;

@@ -16,23 +16,23 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'20/5/2012'</value>
+      <value>'6/8/2012'</value>
     </define>
     <optimize>true</optimize>
     <omit-trace-statements>true</omit-trace-statements>
     <verbose-stacktraces>false</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\Flash\paranoida-3D-Domo-in-CSS3-c44f173\src</path-element>
-      <path-element>D:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
+      <path-element>D:\Git\3D-Domo-in-CSS3\src</path-element>
+      <path-element>D:\Program Files\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>D:\Flash\paranoida-3D-Domo-in-CSS3-c44f173\lib\Stats.swc</path-element>
-      <path-element>D:\Flash\paranoida-3D-Domo-in-CSS3-c44f173\lib\Alternativa3D 7.7.0.swc</path-element>
-      <path-element>D:\Flash\paranoida-3D-Domo-in-CSS3-c44f173\lib\MinimalComps_0_9_6.swc</path-element>
+      <path-element>D:\Git\3D-Domo-in-CSS3\lib\Stats.swc</path-element>
+      <path-element>D:\Git\3D-Domo-in-CSS3\lib\Alternativa3D 7.7.0.swc</path-element>
+      <path-element>D:\Git\3D-Domo-in-CSS3\lib\MinimalComps_0_9_6.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\Flash\paranoida-3D-Domo-in-CSS3-c44f173\src\wonderfl\DangBoardPlayer.as</path-element>
+    <path-element>D:\Git\3D-Domo-in-CSS3\src\wonderfl\DanboToCSSPlanes.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>60</default-frame-rate>

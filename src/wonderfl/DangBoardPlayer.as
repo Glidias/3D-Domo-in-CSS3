@@ -1981,7 +1981,7 @@ class DangBoardClip {
 	
 		str += getBodyPart(danbo, "danHead", "rotateX", "rotationX");
 		str += getBodyPart(danbo, "danArmL", "rotateX", "rotationY", 1);
-		str += getBodyPart(danbo, "danArmR", "rotateX", "rotationY", -1);
+		str += getBodyPart(danbo, "danArmR", "rotateX", "rotationY", 1);
 		str += getBodyPart(danbo, "danSldL", "rotateX", "rotationX");
 		str += getBodyPart(danbo, "danSldR", "rotateX", "rotationX");
 		str += getBodyPart(danbo, "danLegL", "rotateX", "rotationX");
